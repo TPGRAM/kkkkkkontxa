@@ -12,7 +12,11 @@ import threading
 api_id = 38898247
 api_hash = "18c20f0f70aaafaad280a6d630083053"
 
-bot = Client("my_session", api_id, api_hash)
+# ضع توكن البوت هنا مباشرة
+bot_token = "8294167582:AAHt6Ixq_PQbTRLNb0YeOPIGkf8TrAjUz0I"
+
+# تشغيل البوت باستخدام التوكن داخل السكربت
+bot = Client("my_session", api_id, api_hash, bot_token=bot_token)
 
 ss = os.environ.get("STRING", None)
 if ss is not None:
@@ -176,4 +180,3 @@ print("🤖 البوت اشتغل بنجاح!")
 print("🚀 Bot is running...")
 
 bot.run()
-
